@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51b6be75-717a-4792-aced-f26e079f5f90" name="Default Changelist" comment="" />
+    <list default="true" id="51b6be75-717a-4792-aced-f26e079f5f90" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../1.Spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../1.Spring/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +62,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -73,11 +78,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-393" />
-    <option name="y" value="621" />
+    <option name="x" value="50" />
+    <option name="y" value="188" />
     <option name="width" value="1701" />
     <option name="height" value="620" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <flattenPackages ProjectPane="false" />
@@ -211,7 +217,7 @@
     <option name="totallyTimeSpent" value="10394000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-393" y="621" width="1701" height="620" extended-state="1" />
+    <frame x="50" y="188" width="1701" height="620" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2589884" />
