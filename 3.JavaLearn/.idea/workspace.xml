@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e3b9efcd-0709-464e-9d0f-e816476f56a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../2.Java/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/4.Mooc-Junit/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/4.Mooc-Junit/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/4.Mooc-Junit/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/4.Mooc-Junit/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/4.Mooc-Junit/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/4.Mooc-Junit/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/4.Mooc-Junit/3.BulidSSM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/4.Mooc-Junit/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/4.Mooc-Junit/src/main/java/impl/SanJiao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/3.BulidSSM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/src/main/java/ThreadControlByVar/Volatile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/src/main/java/simple/thread/ThreadByClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/5.Mooc-Thread/src/main/java/simple/thread/ThreadByInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/test1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.Java/test1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2.Java/3.BulidSSM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2.Java/3.BulidSSM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2.Java/3.BulidSSM/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2.Java/3.BulidSSM/pom.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MOOC17-03/src/ThreadDemo0.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOC17-03/src/ThreadDemo1.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOC17-03/src/ThreadDemo2.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOC17-03/src/ThreadDemo3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOC17-02/src/Thread1.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOC17-02/src/ThreadDemo1.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOOC17-02/src/ThreadDemo3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="63" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="70" />
+    <option name="y" value="13" />
+    <option name="width" value="1745" />
+    <option name="height" value="1021" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="3.JavaLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3.JavaLearn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3.JavaLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3.JavaLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="MOOC17-03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3.JavaLearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3.JavaLearn" type="462c0819:PsiDirectoryNode" />
+              <item name="MOOC17-03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550297810403" />
+    <property name="last_opened_file_path" value="D:/3.WorkCode/2.Java/1.公卫/5.2019-2-14/intelligent_housekeeper/nx-admin-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3b9efcd-0709-464e-9d0f-e816476f56a9" name="Default Changelist" comment="" />
+      <created>1550285009030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550285009030</updated>
+      <workItem from="1550285012578" duration="3331000" />
+      <workItem from="1550313611174" duration="29000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3360000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="70" y="13" width="1745" height="1021" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.252819" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MOOC17-01/src/ProcessDemo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="364" lean-forward="true" selection-start-column="364" selection-end-column="364" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-01/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-01/src/ThreadDemo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="534" selection-start-column="534" selection-end-column="534" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-01/.project">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-02/src/ThreadDemo0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="517" selection-start-column="517" selection-end-column="517" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-01/bin/ThreadDemo1.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-01/bin/ProcessDemo1.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-01/bin/TestThread1.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-02/src/Thread2.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-03/src/ThreadDemo0.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-03/src/ThreadDemo1.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-03/src/ThreadDemo2.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-03/src/ThreadDemo3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-02/src/Thread1.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-02/src/ThreadDemo1.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOOC17-02/src/ThreadDemo3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="63" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
