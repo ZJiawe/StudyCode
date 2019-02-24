@@ -2,16 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5133e906-39a3-4e10-b796-287a8048f19b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.BulidSSM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/SSMSource/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/SSMSource/src/main/java/ZhengJiaWei/site/Impl/UserImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/SSMSource/src/main/java/ZhengJiaWei/site/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/SSMSource/src/main/java/ZhengJiaWei/site/constructor/Bean1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/SSMSource/src/main/java/ZhengJiaWei/site/ioc/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/SSMSource/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0.SSM/SSMSource/src/test/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/4.Mooc-Junit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/6.Aliyun-MyBatis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/src/ZJiaWe.Util/MyBatisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/src/main/java/dao/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/src/main/java/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/src/main/resources/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/src/main/resources/mybatis.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../6.Aliyun-MyBatis/src/test/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/2.Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/2.Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3.BulidSSM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3.BulidSSM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../3.BulidSSM/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3.BulidSSM/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="361">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -56,9 +81,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -98,16 +123,19 @@
       <workItem from="1549885677386" duration="1245000" />
       <workItem from="1550028510608" duration="371000" />
       <workItem from="1550029113717" duration="192000" />
+      <workItem from="1550996027439" duration="604000" />
+      <workItem from="1551002938673" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1808000" />
+    <option name="totallyTimeSpent" value="3012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="144" y="336" width="1456" height="969" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25716332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26432666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -150,8 +178,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

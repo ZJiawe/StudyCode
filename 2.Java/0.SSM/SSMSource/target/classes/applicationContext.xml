@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="userdao" class="ZhengJiaWei.site.Impl.UserImp"/>-->
+    <!--<bean id="userService" class="ZhengJiaWei.site.Service.UserService">-->
+        <!--<property name="userDao" ref="userdao"/>-->
+    <!--</bean>-->
+    <bean id="Bean1" class="ZhengJiaWei.site.constructor.Bean1" />
+
+</beans>

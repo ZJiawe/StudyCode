@@ -2,29 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23e61c99-c78e-4095-94bc-b77e9ae393cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.Mooc-Junit/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.Mooc-Junit/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.Mooc-Junit/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.Mooc-Junit/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.Mooc-Junit/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.Mooc-Junit/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.Mooc-Junit/3.BulidSSM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.Mooc-Junit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.Mooc-Junit/src/main/java/impl/SanJiao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/3.BulidSSM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/src/main/java/ThreadControlByVar/Volatile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/src/main/java/simple/thread/ThreadByClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.Mooc-Thread/src/main/java/simple/thread/ThreadByInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/SSMSource/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/SSMSource/src/main/java/ZhengJiaWei/site/Impl/UserImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/SSMSource/src/main/java/ZhengJiaWei/site/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/SSMSource/src/main/java/ZhengJiaWei/site/ioc/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/SSMSource/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.SSM/SSMSource/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/2.Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2.Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/3.BulidSSM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3.BulidSSM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.BulidSSM/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/3.BulidSSM/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/4.StudyByVideo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,35 +40,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/Executor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/ThreadGroup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/ForkJoin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -111,7 +75,18 @@
         <option value="$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/ForkJoin.java" />
         <option value="$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/Executor.java" />
         <option value="$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/ThreadGroup.java" />
+        <option value="$PROJECT_DIR$/0.SSM/SSMSource/pom.xml" />
+        <option value="$PROJECT_DIR$/0.SSM/SSMSource/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/0.SSM/SSMSource/src/test/java/Test.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\Administrator\.m2\repository" />
+        <option name="userSettingsFile" value="D:\1.Software\2.CodeSoftware\2.Java&amp;Mysql\7.maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -121,10 +96,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
-    <option name="y" value="196" />
-    <option name="width" value="1456" />
-    <option name="height" value="861" />
+    <option name="x" value="-45" />
+    <option name="y" value="314" />
+    <option name="width" value="1745" />
+    <option name="height" value="888" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -142,6 +117,17 @@
             <path>
               <item name="2.Java" type="b2602c69:ProjectViewProjectNode" />
               <item name="2.Java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2.Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2.Java" type="462c0819:PsiDirectoryNode" />
+              <item name="4.Mooc-Junit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2.Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2.Java" type="462c0819:PsiDirectoryNode" />
+              <item name="4.Mooc-Junit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="2.Java" type="b2602c69:ProjectViewProjectNode" />
@@ -186,8 +172,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,13 +183,14 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550332315852" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550925998311" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/0.SSM" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/4.StudyByVideo/pom.xml" />
   </component>
   <component name="RecentsManager">
@@ -321,6 +308,9 @@
       <workItem from="1550313609694" duration="34000" />
       <workItem from="1550314092151" duration="460000" />
       <workItem from="1550322198782" duration="8009000" />
+      <workItem from="1550387480250" duration="1792000" />
+      <workItem from="1550912097459" duration="321000" />
+      <workItem from="1550924125622" duration="1069000" />
     </task>
     <servers />
   </component>
@@ -357,13 +347,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31428000" />
+    <option name="totallyTimeSpent" value="34610000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="196" width="1456" height="861" extended-state="0" />
-    <editor active="true" />
+    <frame x="-45" y="314" width="1745" height="888" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21780415" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,7 +360,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891247" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.26822558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -482,24 +471,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/ForkJoin.java">
+    <entry file="file://$PROJECT_DIR$/5.Mooc-Thread/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/ThreadGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/Executor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="57">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/ThreadGroup.java">
+    <entry file="file://$PROJECT_DIR$/5.Mooc-Thread/src/main/java/frameworkThread/ForkJoin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://SpringLocalModels/module=2.Java">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>SpringLocalModels</ID>
+          <OriginalElement>module=2.Java</OriginalElement>
+          <nodes>
+            <node x="" y="">module=2.Java</node>
+            <node x="" y="">fileset=2.Java/ApplicationContext</node>
+            <node x="" y="">filePath=D:/4.StudyCode/2.Java/0.SSM/SSMSource/src/main/resources/applicationContext.xml</node>
+            <node x="" y="">filePath=D:/4.StudyCode/2.Java/1.Spring/src/spring.xml</node>
+            <node x="" y="">filePath=D:/4.StudyCode/2.Java/1.Spring/out/production/1.Spring/spring.xml</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="250.5" y="71.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Show filesets as groups</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0.SSM/SSMSource/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0.SSM/SSMSource/src/test/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0.SSM/SSMSource/src/main/java/ZhengJiaWei/site/Service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0.SSM/SSMSource/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0.SSM/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -520,7 +576,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -555,7 +611,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>2.Java</last-edited>
+          <last-edited>Spring|2.Java</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
