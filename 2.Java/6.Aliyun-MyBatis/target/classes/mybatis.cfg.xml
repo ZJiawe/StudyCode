@@ -26,7 +26,7 @@
             <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/learndb"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/learndb?userUnicod=ture&amp;characterEncoding=utf8"/>
                 <property name="username" value="root"/>
                 <property name="password" value="z1048549613"/>
             </dataSource>

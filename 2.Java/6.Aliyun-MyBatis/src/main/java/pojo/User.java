@@ -34,4 +34,8 @@ public class User {
     this.age = age;
   }
 
+  @Override
+  public String toString() {
+    return this.getClass()+":"+"name="+this.getName()+",age="+this.getAge();
+  }
 }
