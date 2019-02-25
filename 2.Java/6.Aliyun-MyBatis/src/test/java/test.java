@@ -12,7 +12,7 @@ public class test {
     @Test
     public void SearchById(){
         UserService userService = new UserService();
-        User user = userService.getById(5);
+        User user = userService.getById(6);
         System.out.println(user.toString());
     }
 

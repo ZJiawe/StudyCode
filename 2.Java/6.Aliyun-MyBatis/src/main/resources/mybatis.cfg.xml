@@ -2,6 +2,8 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+    <properties resource="dbConnect.properties"/>
+
     <settings>
         <!-- Globally enables or disables any caches configured in any mapper under this configuration -->
         <setting name="cacheEnabled" value="false"/>
@@ -15,20 +17,19 @@
         <setting name="useGeneratedKeys" value="true"/>
     </settings>
 
-    <!-- Continue editing here -->
-<typeAliases>
-    <package name="pojo"></package>
-</typeAliases>
+    <typeAliases>
+        <package name="pojo"></package>
+    </typeAliases>
 
     <!--数据库基本配置-->
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/learndb?userUnicod=ture&amp;characterEncoding=utf8"/>
-                <property name="username" value="root"/>
-                <property name="password" value="z1048549613"/>
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
             </dataSource>
         </environment>
     </environments>
@@ -37,11 +38,6 @@
     <mappers>
         <mapper resource="Mapper/UserMapper.xml"></mapper>
     </mappers>
-
-
-
-
-
 
 
 </configuration>
