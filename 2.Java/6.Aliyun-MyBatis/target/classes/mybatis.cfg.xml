@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
     <properties resource="dbConnect.properties"/>
 
     <settings>
@@ -35,13 +36,12 @@
 
     <!--mapper文件-->
     <mappers>
-        <mapper resource="Mapper/UserMapper.xml"></mapper>
+        <!--注解实现-->
+        <mapper class="pojo.IUserTest"/>
+        <!--原实现-->
+        <mapper resource="Mapper/UserMapper.xml"/>
+        <mapper resource="Mapper/TeacherStudentMapper.xml"/>
     </mappers>
-
-
-
-
-
 
 
 </configuration>

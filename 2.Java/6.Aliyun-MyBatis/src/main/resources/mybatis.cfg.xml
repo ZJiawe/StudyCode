@@ -36,7 +36,11 @@
 
     <!--mapper文件-->
     <mappers>
-        <mapper resource="Mapper/UserMapper.xml"></mapper>
+        <!--注解实现-->
+        <mapper class="pojo.IUserTest"/>
+        <!--原实现-->
+        <mapper resource="Mapper/UserMapper.xml"/>
+        <mapper resource="Mapper/TeacherStudentMapper.xml"/>
     </mappers>
 
 

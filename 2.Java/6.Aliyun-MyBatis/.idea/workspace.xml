@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c709dc1-cf64-4243-9002-1f2adc5a7311" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dbConnect.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/ISearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/IUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Mapper/TeacherStudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/043e471a-4ea5-4671-a91f-6aa397c4af55.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/043e471a-4ea5-4671-a91f-6aa397c4af55.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/MyBatisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/MyBatisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/IUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mybatis.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/MyBatisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/MyBatisUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pojo/IUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pojo/IUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,6 +62,20 @@
         <item name="learndb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="learndb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="student: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="learndb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="learndb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="teacher: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="learndb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="learndb: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -68,10 +92,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pojo/IUserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="259">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pojo/ISearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -79,14 +115,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-192">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="461">
+              <caret line="132" column="5" lean-forward="true" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getById#0;class#UserService#0" />
                 <element signature="method#addUser#0;class#UserService#0" />
                 <element signature="method#deleteUser#0;class#UserService#0" />
+                <element signature="method#updateUser#0;class#UserService#0" />
+                <element signature="method#selectAllUser#0;class#UserService#0" />
+                <element signature="method#selectAllUserBySort#0;class#UserService#0" />
+                <element signature="method#selectAllUserByClass#0;class#UserService#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="52" lean-forward="true" selection-start-line="3" selection-end-line="52" />
+              <folding>
+                <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#157#158#0" expanded="true" />
+                <element signature="e#202#203#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Teacher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="26" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -94,54 +160,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="285">
+              <caret line="66" selection-start-line="66" selection-end-line="71" selection-end-column="5" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#Add#0;class#test#0" />
                 <element signature="method#delete#0;class#test#0" />
                 <element signature="method#Update#0;class#test#0" />
-                <element signature="method#SelectAll#0;class#test#0" />
+                <element signature="method#selectAllUserBySort#0;class#test#0" />
+                <element signature="method#selectAllUserByClass#0;class#test#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pojo/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Mapper/TeacherStudentMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="7" selection-start-line="7" selection-end-line="21" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+            <state relative-caret-position="354">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/dbConnect.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/MyBatisUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="394">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,6 +219,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="郑嘉伟 &lt;1048549613@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -175,16 +238,22 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/Mapper/auserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pojo/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pojo/IUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/MyBatisUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.propertise" />
         <option value="$PROJECT_DIR$/src/main/resources/dbConnet/db.propertise" />
         <option value="$PROJECT_DIR$/src/main/resources/dbConnet/dbConnect.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/test.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dbConnect.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pojo/IUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pojo/IUserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pojo/Search.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pojo/ISearch.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pojo/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Mapper/TeacherStudentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/service/StudentService.java" />
       </list>
     </option>
   </component>
@@ -196,10 +265,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
-    <option name="y" value="39" />
+    <option name="x" value="-161" />
+    <option name="y" value="257" />
     <option name="width" value="1806" />
-    <option name="height" value="966" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -209,7 +278,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -235,6 +303,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="6.Aliyun-MyBatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyBatis" type="b2602c69:ProjectViewProjectNode" />
@@ -288,33 +364,36 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551093208226" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551187723825" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../4.Mooc-Junit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pojo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\4.StudyCode\2.Java" />
+      <recent name="D:\4.StudyCode\2.Java\6.Aliyun-MyBatis\src\main\java\entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pojo" />
+      <recent name="util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\4.StudyCode\2.Java\6.Aliyun-MyBatis\src\main\resources" />
       <recent name="D:\4.StudyCode\2.Java\6.Aliyun-MyBatis\src\main\resources\dbConnet" />
       <recent name="D:\4.StudyCode\2.Java\6.Aliyun-MyBatis\src\main\resources\Mapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="util" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\4.StudyCode\2.Java\6.Aliyun-MyBatis\src\main\java\entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -329,21 +408,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test">
+  <component name="RunManager" selected="JUnit.test.StudentToTeacher">
     <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="6.Aliyun-MyBatis" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.SearchById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="6.Aliyun-MyBatis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="SearchById" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -358,21 +427,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.Update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test.StudentToTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="6.Aliyun-MyBatis" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="Update" />
+      <option name="METHOD_NAME" value="StudentToTeacher" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test.selectAllUserByClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="6.Aliyun-MyBatis" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="METHOD_NAME" value="selectAllUserByClass" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.selectAllUserBySort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="6.Aliyun-MyBatis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="selectAllUserBySort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -380,11 +459,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test" />
-        <item itemvalue="JUnit.test.SearchById" />
+        <item itemvalue="JUnit.test.StudentToTeacher" />
+        <item itemvalue="JUnit.test.selectAllUserByClass" />
+        <item itemvalue="JUnit.test.selectAllUserBySort" />
         <item itemvalue="JUnit.test.SelectAll" />
-        <item itemvalue="JUnit.test.Update" />
-        <item itemvalue="JUnit.test.delete" />
+        <item itemvalue="JUnit.test" />
       </list>
     </recent_temporary>
   </component>
@@ -403,50 +482,59 @@
       <workItem from="1550989913839" duration="7262000" />
       <workItem from="1551002939167" duration="9418000" />
       <workItem from="1551068188677" duration="4036000" />
-      <workItem from="1551083248454" duration="6450000" />
+      <workItem from="1551083248454" duration="11453000" />
+      <workItem from="1551178469472" duration="6346000" />
     </task>
+    <task id="LOCAL-00001" summary="mybatis配置文件优化">
+      <created>1551093295230</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551093295230</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_Update - 2019.02.25 at 13h 01m 37s.xml">
-      <configuration name="test.Update" configurationId="JUnit" />
+    <history-entry file="test_selectAllUserBySort - 2019.02.25 at 20h 40m 16s.xml">
+      <configuration name="test.selectAllUserBySort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_SelectAll - 2019.02.25 at 13h 15m 56s.xml">
-      <configuration name="test.SelectAll" configurationId="JUnit" />
+    <history-entry file="test_selectAllUserBySort - 2019.02.25 at 20h 41m 00s.xml">
+      <configuration name="test.selectAllUserBySort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_SearchById - 2019.02.25 at 18h 51m 03s.xml">
-      <configuration name="test.SearchById" configurationId="JUnit" />
+    <history-entry file="test_selectAllUserByClass - 2019.02.26 at 19h 16m 54s.xml">
+      <configuration name="test.selectAllUserByClass" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_SearchById - 2019.02.25 at 18h 56m 33s.xml">
-      <configuration name="test.SearchById" configurationId="JUnit" />
+    <history-entry file="test_StudentToTeacher - 2019.02.26 at 21h 17m 32s.xml">
+      <configuration name="test.StudentToTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_SearchById - 2019.02.25 at 18h 57m 00s.xml">
-      <configuration name="test.SearchById" configurationId="JUnit" />
+    <history-entry file="test_StudentToTeacher - 2019.02.26 at 21h 20m 38s.xml">
+      <configuration name="test.StudentToTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test - 2019.02.25 at 19h 00m 19s.xml">
-      <configuration name="test" configurationId="JUnit" />
+    <history-entry file="test_StudentToTeacher - 2019.02.26 at 21h 21m 30s.xml">
+      <configuration name="test.StudentToTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_SearchById - 2019.02.25 at 19h 00m 29s.xml">
-      <configuration name="test.SearchById" configurationId="JUnit" />
+    <history-entry file="test_StudentToTeacher - 2019.02.26 at 21h 21m 53s.xml">
+      <configuration name="test.StudentToTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test - 2019.02.25 at 19h 01m 25s.xml">
-      <configuration name="test" configurationId="JUnit" />
+    <history-entry file="test_StudentToTeacher - 2019.02.26 at 21h 22m 14s.xml">
+      <configuration name="test.StudentToTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_SearchById - 2019.02.25 at 19h 02m 38s.xml">
-      <configuration name="test.SearchById" configurationId="JUnit" />
+    <history-entry file="test_StudentToTeacher - 2019.02.26 at 21h 22m 26s.xml">
+      <configuration name="test.StudentToTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test - 2019.02.25 at 19h 03m 22s.xml">
-      <configuration name="test" configurationId="JUnit" />
+    <history-entry file="test_StudentToTeacher - 2019.02.26 at 21h 22m 36s.xml">
+      <configuration name="test.StudentToTeacher" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28162000" />
+    <option name="totallyTimeSpent" value="39511000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="39" width="1806" height="966" extended-state="0" />
+    <frame x="-161" y="257" width="1806" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1323024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18785796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -455,18 +543,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.117788464" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4078675" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23684211" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.2836439" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32692307" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32505175" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24971165" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -475,7 +563,7 @@
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.1061008" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.16151203" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20026526" />
@@ -512,6 +600,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mybatis配置文件优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis配置文件优化" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -557,57 +659,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/IUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dbConnet/db.propertise" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/MyBatisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dbConnet/db.propertise">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getById#0;class#UserService#0" />
-            <element signature="method#addUser#0;class#UserService#0" />
-            <element signature="method#deleteUser#0;class#UserService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="method#Add#0;class#test#0" />
-            <element signature="method#delete#0;class#test#0" />
-            <element signature="method#Update#0;class#test#0" />
-            <element signature="method#SelectAll#0;class#test#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="33">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -618,17 +674,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/MyBatisUtil.java">
+    <entry file="file://$PROJECT_DIR$/../7.testMyBatis/src/main/java/pojo/User.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar!/org/apache/ibatis/session/RowBounds.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="58">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/IUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/IUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/ISearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Mapper/TeacherStudentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" selection-start-line="7" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        <state relative-caret-position="354">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="132" column="5" lean-forward="true" selection-start-line="132" selection-start-column="5" selection-end-line="132" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getById#0;class#UserService#0" />
+            <element signature="method#addUser#0;class#UserService#0" />
+            <element signature="method#deleteUser#0;class#UserService#0" />
+            <element signature="method#updateUser#0;class#UserService#0" />
+            <element signature="method#selectAllUser#0;class#UserService#0" />
+            <element signature="method#selectAllUserBySort#0;class#UserService#0" />
+            <element signature="method#selectAllUserByClass#0;class#UserService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="66" selection-start-line="66" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Add#0;class#test#0" />
+            <element signature="method#delete#0;class#test#0" />
+            <element signature="method#Update#0;class#test#0" />
+            <element signature="method#selectAllUserBySort#0;class#test#0" />
+            <element signature="method#selectAllUserByClass#0;class#test#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="52" lean-forward="true" selection-start-line="3" selection-end-line="52" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -708,7 +881,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.mybatis:mybatis:3.4.6</last-edited>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

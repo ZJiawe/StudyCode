@@ -31,4 +31,9 @@
         select * from user
     </select>
 
+    <!--分页查找-->
+    <select id="selectAllUserBySort"  parameterType="map" resultType="pojo.User">
+        select * from user limit #{startIndex},#{pageNum}
+    </select>
+
 </mapper>

@@ -6,12 +6,12 @@
 <mapper namespace="pojo.IUser">
 
     <!--主键查找-->
-    <select id="getById" resultType="User">
+    <select id="getById" resultType="pojo.User">
         select * from  user where idUser = #{id}
     </select>
 
     <!--添加记录-->
-    <insert id="addUser" parameterType="User" useGeneratedKeys="true">
+    <insert id="addUser" parameterType="pojo.User" useGeneratedKeys="true">
         insert into user values (#{idUser},#{name},#{age})
     </insert>
 
@@ -21,14 +21,19 @@
     </delete>
 
     <!--更新记录-->
-    <update id="updateUser" parameterType="User">
+    <update id="updateUser" parameterType="pojo.User">
         update user set idUser = #{idUser},name=#{name},age = #{age}
         where  idUser = #{idUser}
     </update>
 
     <!--查找所有记录-->
-    <select id="selectAllUser" resultType="User">
+    <select id="selectAllUser" resultType="pojo.User">
         select * from user
+    </select>
+
+    <!--分页查找-->
+    <select id="selectAllUserBySort"  parameterType="map" resultType="pojo.User">
+        select * from user limit #{startIndex},#{pageNum}
     </select>
 
 </mapper>
