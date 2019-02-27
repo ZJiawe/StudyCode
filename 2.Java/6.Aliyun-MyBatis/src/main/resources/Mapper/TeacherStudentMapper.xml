@@ -5,7 +5,7 @@
 
 <mapper namespace="pojo.ISearch">
 
-    <!--主键查找-->
+    <!--查询学生对应的老师  多对一操作-->
     <select id="serchAllTeacher" resultMap="StudentTeacher">
         select s.id sid,s.name sname,t.id tid,t.name tname
           FROM student s,teacher t
@@ -21,5 +21,20 @@
         </association>
     </resultMap>
 
+    <!--查询老师下所有学生  一对多操作-->
+    <select id="serchAllStudent" resultMap="TeacherStudent">
+        select s.id sid,s.name sname,t.id tid,t.name tname
+          FROM student s,teacher t
+          where s.t_id = t.id
+    </select>
+
+    <resultMap id="TeacherStudent" type="pojo.Teacher">
+        <id column="tid" property="id"/>
+        <result column="tname" property="name"/>
+        <collection property="students" ofType="pojo.Student">
+            <id column="sid" property="id"></id>
+            <result column="sname" property="name"></result>
+        </collection>
+    </resultMap>
 
 </mapper>

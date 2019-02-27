@@ -131,4 +131,17 @@ public class UserService implements IUser {
         }
         return users;
     }
+
+    //实现动态sql语句查询
+    public List<User> selectByCondition() {
+        SqlSession session = MyBatisUtil.getSession();
+        Map<String,String> map = new HashMap<String, String>();
+        map.put("name","郑");
+        List<User> users = session.selectList("selectByCondition",map);
+        for (User u:users
+             ) {
+            System.out.println(u.toString());
+        }
+        return null;
+    }
 }

@@ -36,4 +36,14 @@
         select * from user limit #{startIndex},#{pageNum}
     </select>
 
+    <!--动态sql语句查找-->
+    <select id="selectByCondition" resultType="pojo.User" parameterType="map">
+          select * from user
+          <where>
+              <if test="name!=null ">
+                  name like CONCAT('%',#{name},'%')
+              </if>
+          </where>
+    </select>
+
 </mapper>

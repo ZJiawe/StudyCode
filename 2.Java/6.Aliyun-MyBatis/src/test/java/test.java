@@ -1,3 +1,5 @@
+import pojo.Student;
+import pojo.Teacher;
 import pojo.User;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
@@ -64,11 +66,33 @@ public class test {
         List<User> users = userService.selectAllUserByClass();
     }
 
-    @Test
     //实现多对一连表查询
+    @Test
     public void StudentToTeacher(){
         StudentService studentService = new StudentService();
         studentService.serchAllTeacher();
+    }
+
+    //实现一对多的连表查询
+    @Test
+    public void TeacherToStudent(){
+        StudentService studentService = new StudentService();
+        List<Teacher> teachers =  studentService.serchAllStudent(1);
+        for (Teacher t:teachers
+             ) {
+            System.out.println("Teacher: "+t.getName());
+            for (Student s:t.getStudents()
+                 ) {
+                System.out.println("Student: " + s.getName());
+            }
+        }
+    }
+
+    //实现动态语句查询
+    @Test
+    public void selectByCondition(){
+        UserService userService = new UserService();
+        userService.selectByCondition();
     }
 
 

@@ -1,11 +1,21 @@
 package pojo;
 
 
+import java.util.List;
+
 public class Teacher {
 
   private long id;
   private String name;
+  private List<Student> students;
 
+  public List<Student> getStudents() {
+    return students;
+  }
+
+  public void setStudents(List<Student> students) {
+    this.students = students;
+  }
 
   public long getId() {
     return id;
