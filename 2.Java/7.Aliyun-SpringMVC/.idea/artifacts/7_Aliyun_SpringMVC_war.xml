@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="7.Aliyun-SpringMVC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>7.Aliyun-SpringMVC</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SpringMVC-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="7.Aliyun-SpringMVC:war exploded" />
+      <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+    </root>
+  </artifact>
+</component>
