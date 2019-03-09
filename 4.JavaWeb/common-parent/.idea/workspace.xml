@@ -7,40 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c1b41c4-a08f-4f72-85ee-f2e35e8ece8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/edu-manager/src/main/java/com/qianyu/site/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-manager/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-manager/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-manager/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/Default.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserEdit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserManage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserUpdate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.Android/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.Android/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-dao/src/main/java/com/qianyu/site/mapper/UserMaper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-dao/src/main/java/com/qianyu/site/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/src/main/java/com/qianyu/site/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-manager/src/main/resources/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/target/classes/com/qianyu/site/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-manager/target/classes/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/classes/com/qianyu/site/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/classes/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/lib/edu-dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/lib/edu-dao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/lib/edu-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/lib/edu-model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/lib/edu-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/lib/edu-service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-model/src/main/java/com/qianyu/site/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-model/target/classes/com/qianyu/site/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-service/target/classes/com/qianyu/site/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu-service/target/classes/com/qianyu/site/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-service/target/classes/com/qianyu/site/service/interfaces/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/edu-service/target/classes/com/qianyu/site/service/interfaces/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/edu-api/target/" />
@@ -59,26 +26,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/Default.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserEdit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-784">
-              <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+            <state relative-caret-position="1349">
+              <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserEdit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1028">
+              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserInfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="108" column="110" lean-forward="true" selection-start-line="108" selection-start-column="110" selection-end-line="108" selection-end-column="110" />
+            <state relative-caret-position="20">
+              <caret line="122" column="106" lean-forward="true" selection-start-line="122" selection-start-column="106" selection-end-line="122" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -86,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserManage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="23" column="64" lean-forward="true" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+            <state relative-caret-position="437">
+              <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -95,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserUpdate.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2569">
+            <state relative-caret-position="2033">
               <caret line="107" column="79" selection-start-line="107" selection-start-column="69" selection-end-line="107" selection-end-column="79" />
             </state>
           </provider>
@@ -104,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edu-manager/src/main/java/com/qianyu/site/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="608">
               <caret line="40" column="25" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -123,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/edu-manager/src/main/resources/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="551">
-              <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -326,7 +293,7 @@
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -543,6 +510,7 @@
       <workItem from="1552096407138" duration="5048000" />
       <workItem from="1552105805514" duration="7052000" />
       <workItem from="1552118744775" duration="2829000" />
+      <workItem from="1552125487647" duration="493000" />
     </task>
     <task id="LOCAL-00001" summary="SSM基本构造创建">
       <created>1551873148027</created>
@@ -558,11 +526,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552060246902</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SSM搭建完毕。。。">
+      <created>1552125549200</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552125549200</updated>
+    </task>
+    <task id="LOCAL-00004" summary="SSM搭建完毕。。。">
+      <created>1552125739839</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552125739839</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35278000" />
+    <option name="totallyTimeSpent" value="35771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -574,10 +556,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="158" width="1767" height="964" extended-state="0" />
-    <editor active="true" />
+    <frame x="112" y="12" width="1767" height="964" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2560047" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2589338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -591,16 +572,16 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4993895" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.51232165" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.39040208" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.4272" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4981685" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.5120482" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.39036146" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.426506" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.49759036" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3294423" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32844934" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3294423" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.1373494" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.3294423" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="15" visible="true" weight="0.60240966" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.02764423" />
@@ -617,7 +598,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SSM基本构造创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="SSM基本构造创建" />
+    <MESSAGE value="SSM搭建完毕。。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="SSM搭建完毕。。。" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/edu-manager/target/edu-manager/index.jsp">
@@ -806,7 +788,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/Salary/UserEdit.jsp" />
-    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/Default.jsp" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -821,11 +802,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/Default.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/edu-manager/target/edu-manager/WEB-INF/Default.jsp" />
     <entry file="file://$PROJECT_DIR$/edu-manager/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2706">
@@ -849,30 +826,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/resources/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserEdit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-784">
-          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/Default.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        <state relative-caret-position="1349">
+          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserManage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserUpdate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2033">
+          <caret line="107" column="79" selection-start-line="107" selection-start-column="69" selection-end-line="107" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/edu-manager/src/main/java/com/qianyu/site/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="608">
           <caret line="40" column="25" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -886,24 +863,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserUpdate.jsp">
+    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/resources/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2569">
-          <caret line="107" column="79" selection-start-line="107" selection-start-column="69" selection-end-line="107" selection-end-column="79" />
+        <state relative-caret-position="551">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserManage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="64" lean-forward="true" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/assets/Styles/common.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="108" column="110" lean-forward="true" selection-start-line="108" selection-start-column="110" selection-end-line="108" selection-end-column="110" />
+        <state relative-caret-position="20">
+          <caret line="122" column="106" lean-forward="true" selection-start-line="122" selection-start-column="106" selection-end-line="122" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edu-manager/src/main/webapp/WEB-INF/Modules/User/UserEdit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1028">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
         </state>
       </provider>
     </entry>
