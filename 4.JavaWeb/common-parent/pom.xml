@@ -31,6 +31,8 @@
         <taglibs.version>1.1.2</taglibs.version>
         <c3p0.version>0.9.5.2</c3p0.version>
         <mysql.version>5.1.35</mysql.version>
+        <javax.servlet-api>3.1.0</javax.servlet-api>
+        <javax.servlet.jsp>2.3.1</javax.servlet.jsp>
     </properties>
 
     <!--公共依赖-->
