@@ -2,6 +2,7 @@ package com.qianyu.site.controller;
 
 
 import com.qianyu.site.Model.User;
+import com.qianyu.site.controller.base.BaseController;
 import com.qianyu.site.service.interfaces.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,18 +10,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("user")
-public class UserController {
+public class UserController extends BaseController<User> {
 
     @Autowired
     private IUserService userService;
 
-    @RequestMapping("login")
+    @RequestMapping(LOGIN)
     public String login(){
         System.out.println(".....");
         return "Default";
     }
 
-    @RequestMapping("find")
+    @RequestMapping(FIND)
     public String find(Integer id){
         System.out.println(".....");
         User user = userService.findById(id);
@@ -28,19 +29,19 @@ public class UserController {
         return null;
     }
 
-    @RequestMapping("manage")
+    @RequestMapping(MANAGE)
     public String manage(){
-        return "User/UserManage";
+        return PAGE_MANAGE;
     }
 
-    @RequestMapping("info")
+    @RequestMapping(INFO)
     public String info(){
-        return "User/UserInfo";
+        return PAGE_INFO;
     }
 
-    @RequestMapping("edit")
+    @RequestMapping(EDIT)
     public String edit(){
-        return "User/UserEdit";
+        return PAGE_EDIT;
     }
 
 }

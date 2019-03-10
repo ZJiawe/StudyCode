@@ -37,6 +37,19 @@
             <version>${mybatis.version}</version>
         </dependency>
 
+        <!--mybatis 自动生成文件-->
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.5</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.28</version>
+            <scope>runtime</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
