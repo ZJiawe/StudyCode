@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本语法</title>
+    <style>
+        .bg {
+            color: rebeccapurple;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/vue/2.6.8/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.6.8/vue.js"></script>
+</head>
+<body>
+    <div id="bg" style="height: auto ; width: auto">
+        <div>
+            {{  count }}
+            {{ (count + 1) * 10 }}
+        </div>
+
+        <!--刷新里面div内容-->
+        <div v-html="temeplement">
+        </div>
+
+        <!--绑定方法-->
+        <div>
+            <button @click="submit()">点击加一</button>
+        </div>
+
+        <!--添加超链接属性-->
+        <a :href="abc" :target="a" >
+            百度
+        </a>
+
+        <div>
+            <p>{{ msg }}</p>
+            <p>{{ msg1 }}</p>
+            <p>{{ msg2 }}</p>
+            <p>{{ msg3 }}</p>
+        </div>
+
+    </div>
+
+<script>
+    var msgTest = '我是msgTest！'
+    var bg = new Vue({
+        //绑定的div层的id
+        el:'#bg',
+        //数据
+        data:{
+            msg:'Hello Vue!',
+            msg1:'I\'m msg1',
+            count: 0,
+            temeplement:'<div> hello temeplement</div>',
+            abc: 'https://cn.bing.com/',
+            a:"_blank"
+        },
+        //方法
+        methods:{
+            submit: function () {
+                this.count++;
+            }
+        },
+        //监听  和computed作用一样都是监听，但是区别是watch是监听单一变量，computed是监听多个变量
+        watch:{
+            msg:function ( newVal, oldVal ) {
+                console.log('newVal:'+newVal);
+                console.log('oldVal:'+oldVal);
+            }
+        },
+        //本实例的data值改变就会监听随之发生改变，但是实例外发生改变就不管了
+        computed:{
+            msg2:function () {
+                return this.msg+',,,'+ this.msg1;
+            },
+            msg3: function () {
+                return 'msg3:'+this.msg2;
+            }
+        }
+    })
+</script>
+</body>
+</html>
