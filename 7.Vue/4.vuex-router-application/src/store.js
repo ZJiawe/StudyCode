@@ -5,13 +5,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    count: 0,
     List: []
   },
   mutations: {
-    increase () {
-      this.state.count++
-    },
     commitNews (title, content) {
       this.state.List.push(content)
     }
