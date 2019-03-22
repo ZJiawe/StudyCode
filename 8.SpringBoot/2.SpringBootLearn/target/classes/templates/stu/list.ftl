@@ -16,11 +16,11 @@
         <td>名字</td>
         <td>性别</td>
     </tr>
-    <#list stuList?sort_by("id")?reverse as stu>
+    <#list student as stu>
         <tr>
         <td> ${stu.id}</td>
         <td> ${stu.name}</td>
-        <td> ${stu.gender}</td>
+        <td> ${stu.sex}</td>
         </tr>
     </#list>
 </table>
