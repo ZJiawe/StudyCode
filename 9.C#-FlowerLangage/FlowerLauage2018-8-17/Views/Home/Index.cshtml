@@ -1,0 +1,161 @@
+﻿<html lang="zh-CN" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="~/Content/js/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/lib/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/css/lib/nivo-lightbox.css" rel="stylesheet" />
+    <link href="~/Content/css/lib/default.css" rel="stylesheet" />
+    <link href="~/Content/css/huaban.css" rel="stylesheet" />
+    <!--Template Styles-->
+    <link href="~/Content/css/style1.css" rel="stylesheet" />
+    <link href="~/Content/css/purple.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery.fancy-textbox.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/lib/jquery.preloader.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#hide").hide();
+        })
+        
+		function doTTS(){
+			var ttsText=$('#ttsText').val();
+			var s="";
+			s+='<audio id="tts_autio_id" autoplay="autoplay">'+
+					'<source id="tts_source_id" src="http://tts.baidu.com/text2audio?idx=1&tex=' + ttsText + '&cuid=baidu_speech_demo&cod=2&lan=zh&ctp=1&pdt=1&spd=3&per=5&vol=8&pit=8" type="audio/mpeg">' +
+					'<embed id="tts_embed_id" height="0" width="0" src="">'+
+				'</audio>';
+			console.log(s);
+			$("#bdtts_div_id").append(s);
+
+		}
+
+    </script>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            background-image: url('../../Content/img/beijing/8.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+        .button{
+		    background:#1AAB8A;
+		    color:#fff;
+		    border:none;
+		    position:relative;
+		    height:40px;
+            width:80px;
+		    font-size:1.2em;
+		    cursor:pointer;
+		    transition:800ms ease all;
+		    outline:none;
+            margin-top:-1px;
+	    }
+	    .button:hover{
+		    background:#fff;
+		    color:#1AAB8A;
+	    }
+	    .button:before,button:after{
+		    content:'';
+		    position:absolute;
+		    top:0;
+		    right:0;
+		    height:2px;
+		    width:0;
+		    background: #1AAB8A;
+		    transition:400ms ease all;
+	    }
+	    .button:after{
+		    right:inherit;
+		    top:inherit;
+		    left:0;
+		    bottom:0;
+	    }
+	    .button:hover:before,button:hover:after{
+		    width:100%;
+		    transition:800ms ease all;
+	    }
+    </style>
+
+</head>
+<body>
+    <div id='content' style="width:100%;height:100%;">
+        <!-- 飘花 -->
+        <div id="snowflake"></div>
+    </div> 
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <div id="main-wrapper">
+
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand" style="width:100%;" align="center">
+                        <img src="~/Content/img/logo.png" width="150" alt="logo">
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse" align="center">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/FlowerData/message">数据中心</a></li>
+                        <li><a href="/Sensor/submit">传感器</a></li>
+                        <li><a href="/FlowerData/index3">查询中心</a></li>
+                        <li><a href="/Chat/talk">客服中心</a></li>
+                        <li class="active"><a>交互中心</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+        <div id="container" style="height:100%;">
+            <div class="row" style="position: relative;top: 50%;transform: translateY(-50%);">
+                <div class="col-md-12" style="text-align:center;">
+                    <button class="button" id="start">开始录音</button>
+                    <button class="button" id="start">停止录音</button>
+                    <button class="button" id="stop">结束录音</button>
+                    <button class="button" id="play">播放</button>
+                    <button class="button" id="upload">上传</button>
+                    @*<a href="#" id="start">开始录音</a>
+                    <a href="#" id="stop">停止录音</a>
+                    <a href="#" id="play">播放</a>
+                    <a href="#" id="upload">上传</a>*@
+                    <br/>
+                    <div id="hide">
+                        <div>
+                            <input type="text" id="ttsText">
+                            <input type="button" id="tts_btn" onclick="doTTS()" value="播放">
+                        </div>
+                        <div id="bdtts_div_id">
+                            <!-- <audio id="tts_autio_id" autoplay="autoplay"> -->
+                            <!-- <source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=9&text=播报内容" type="audio/mpeg"> -->
+                            <!-- <embed id="tts_embed_id" height="0" width="0" src=""> -->
+                            <!-- </audio> -->
+                        </div>
+                    </div>
+                    <audio src="#" autoplay controls id="reply"></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="~/Content/js/HZRecorder.js"></script>
+    <script src="~/Content/js/index.js"></script>
+    <script src="~/Content/js/jquery.transit.js"></script>
+    <script src="~/Content/js/huaban.js"></script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+﻿<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://static.jianshukeji.com/hcode/images/favicon.ico">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/lib/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/css/lib/nivo-lightbox.css" rel="stylesheet" />
+    <link href="~/Content/css/lib/default.css" rel="stylesheet" />
+
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+	<script type="text/javascript" src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+	<script type="text/javascript" src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script src="~/Content/js/my.js"></script>
+    <!--Template Styles-->
+    <link href="~/Content/css/style1.css" rel="stylesheet" />
+    <link href="~/Content/css/purple.css" rel="stylesheet" />
+    <style>
+        #container {
+            position: relative;
+            margin-left: 280px;
+        }
+    </style>
+</head>
+<body style="background:url(../../Content/img/beijing/2.jpg);background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;z-index:-100000;">
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    
+    <div id="main-wrapper">
+
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand" style="width:100%;" align="center">
+                        <img src="~/Content/img/logo.png" width="150" alt="logo">
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse" align="center">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/FlowerData/message">数据中心</a></li>
+                        <li><a href="/Sensor/submit">传感器</a></li>
+                        <li><a href="/FlowerData/ggl">监控中心</a></li>
+                        <li><a href="/FlowerData/index3">查询中心</a></li>
+                        <li><a href="/Chat/talk">咨询中心</a></li>
+                        <li><a href="/Chat/voice">交互中心</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+            <div id="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2" style="background:url(../../Content/img/1.png);background-size:100% 700px;background-repeat:no-repeat">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12" style="height:90px;line-height:90px;background:url(../../Content/img/2.png) center center;background-size:279px 90px;background-repeat:no-repeat;">
+                                <input type="text" style="background-color:transparent;border:0;width:100%;height:80px;text-align:center;color:white" value="温度" readonly="readonly" id="tem" />
+                            </div>
+                            <div class="col-md-4 col-sm-6" style="height:90px;line-height:90px;background:url(../../Content/img/2.png) center center;background-size:279px 90px;background-repeat:no-repeat;">
+                                <input type="text" style="background-color:transparent;border:0;width:100%;height:80px;text-align:center;color:white;" value="湿度" readonly="readonly" id="hum"/>
+                            </div>
+                            <div class="col-md-4 col-sm-6" style="height:90px;line-height:90px;background:url(../../Content/img/2.png) center center;background-size:279px 90px;background-repeat:no-repeat;">
+                                <input type="text" style="background-color:transparent;border:0;width:100%;height:80px;text-align:center;color:white" value="光照度" readonly="readonly" id="light"/>
+                            </div>
+                            <div class="col-md-12">
+                                <div id="container1" style="min-width:400px;height:400px;width:99%"></div>
+                                <div style="position:absolute;right:40px;bottom:100px"><a class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true" onclick="SJFXClick()" style="text-decoration:none;"></a></div>
+                            </div>
+                            <!-- 图表 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:15px">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+                            <div class="col-md-3" style="background:url(../../Content/img/1.png);background-size:100% 300px;background-repeat:no-repeat">
+                                <div class="row" style="height:40px;line-height:40px;text-align:center;color:white">
+                                    查询通道
+                                </div>
+
+                                <div class="row" style="height:200px;line-height:200px;text-align:center">
+                                    <div class="col-md-12 col-sm-12" style="height:100px;line-height:100px;background:url(../../Content/img/2.png) center center;background-size:230px 90px;background-repeat:no-repeat;">
+                                        <input id="start" type="text" style="background-color:transparent;width:100%;height:90px;text-align:center;border: 0px;outline:none;cursor: pointer;color:white" placeholder="输入开始日期" />
+                                    </div>
+                                    <div class="col-md-12 col-sm-12" style="height:100px;line-height:100px;background:url(../../Content/img/2.png) center center;background-size:230px 90px;background-repeat:no-repeat;">
+                                        <input id="end" type="text" style="background-color:transparent;width:100%;height:90px;text-align:center;border: 0px;outline:none;cursor: pointer;color:white" placeholder="输入结束日期" />
+                                    </div>
+                                </div>
+                                <div class="row" style="height:60px;line-height:60px;text-align:center">
+                                    <button id="search" type="button" class="btn btn-primary btn-lg " style="opacity:2;">查询</button>
+                                </div>
+                            </div>
+                            <div class="col-md-9" style="background:url(../../Content/img/1.png);background-size:100% 300px;background-repeat:no-repeat">
+                                <div id="container2" style="width:101%;height:300px;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="~/Content/js/lib/jquery.preloader.js"></script>
+    <script src="~/Content/js/lib/nivo-lightbox.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+
+    <script src="~/Content/js/lib/smoothscroll.js"></script>
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/lib/jquery.superslides.min.js"></script>
+    <script src="~/Content/js/lib/jquery.mixitup.min.js"></script>
+    <script src="~/Content/js/lib/jquery.bxslider.min.js"></script>
+    <script src="~/Content/js/lib/jquery.backtotop.js"></script>
+    <script src="~/Content/js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="~/Content/js/lib/retina.min.js"></script>
+    <script src="~/Content/js/jquery.jqGrid.min.js"></script>
+    <script src="~/Content/js/jquery.cookie.js"></script>
+	<script>
+	$(window).resize(function() {
+		$("#aaa").width($(window).width());
+		$("#aaa").width($(window).width());
+		$(".container1").width($(document.body).width()-100);
+	});
+	</script>
+	<script>
+		$(function () {
+			$(".container1").width($(document.body).width()-100);
+
+			var ystr = [];
+			var zstr = [];
+			var xstr = [];
+			function requestData() {
+			    var ldata = {
+			        "flowerDataDetail": {
+			            FlowerName: $.cookie('Name'),
+			        }
+			    };
+			    var ldata = JSON.stringify(ldata);
+			    $.ajax({
+			        url: '/FlowerData/GetNewData',
+			        type: 'get',
+			        dataType: "json",
+			        data: { querystring: ldata },
+			        success: function (data) {
+			            if (data.rows.ID != null) {
+			                var shift = chart.series[0].data.length > 10;
+			                xstr[0] = parseFloat(data.rows.Temperature);
+			                ystr[0] = parseFloat(data.rows.Humidity);
+			                zstr[0] = parseFloat(data.rows.Light);
+			                //var newpoint={ 
+			                //     x:xstr[i],
+			                //     y:ystr[i] 
+			                // } 
+			                var x = (new Date()).getTime();
+			                x = GetDateFormat(data.rows.Date);
+			                chart.series[0].addPoint([x, xstr[0]], true, shift);
+			                chart.series[1].addPoint([x, ystr[0]], true, shift);
+			                chart.series[2].addPoint([x, zstr[0]], true, shift);
+			                $("#tem").val("温度:"+xstr[0]+"℃");
+			                $("#hum").val("湿度:" + ystr[0]+"RH");
+			                $("#light").val("光照度:" + zstr[0]+"lx");
+			            }
+			            
+			        },
+			        error:function(){
+			            console.log("123456");
+			        }
+			    });  
+			}
+			function GetDateFormat(value) {
+			    //return new Date(parseFloat(str.substr(6, 13))).toLocaleDateString();
+			    return new Date(parseInt(value.replace("/Date(", "").replace(")/", ""), 10)).toLocaleString()
+			}
+			$(document).ready(function () {
+			    //每隔1秒自动调用方法，实现图表的实时更新
+			    window.setInterval(requestData, 2000);
+			});
+
+			Highcharts.setOptions({
+			    global: {
+			        useUTC: false
+			    }
+			});
+			var chart = Highcharts.chart('container1', {
+				chart: {
+					zoomType: 'xy',
+					events:{
+						load:requestData
+					},
+					backgroundColor: 'rgba(255,255,255,0)'
+				},
+				colors: ["#036BC8", "#5EBEFC", "#2EF7F3"],
+				credits:{
+					enabled:false 
+				},
+				exporting: { 
+					enabled: false 
+				},
+				title: {
+					text: '温度/湿度/光照度对比图',
+					style:{
+						color:'#ffffff'
+					}	
+				},
+				xAxis: [{
+					//categories: [],
+					//tickInterval: 5,
+					//crosshair: true,
+					//labels:{
+					//	style: {
+					//		color: '#ffffff'
+					//	}
+					//},
+				    //lineColor:'#ffffff'
+				    type: 'datetime',
+                    tickPixelInterval:150
+				}],
+				yAxis: [{ // Primary yAxis
+					labels: {
+						format: '{value}°C',
+						style: {
+							color: '#ffffff'
+						}
+					},
+					title: {
+						text: '温度',
+						style: {
+							color: '#ffffff'
+						}
+					},
+					
+					gridLineWidth: 0,
+					lineWidth: 1,
+					lineColor:'#ffffff'
+				}, { // Secondary yAxis
+					gridLineWidth: 0,
+					title: {
+						text: '湿度',
+						style: {
+							color: '#ffffff'
+						}
+					},
+					labels: {
+						format: '{value} RH',
+						style: {
+							color: '#ffffff'
+						}
+					},
+					opposite: true,
+					gridLineWidth: 0,
+					lineWidth: 1,
+					lineColor:'#ffffff'
+				}, { // Tertiary yAxis
+					gridLineWidth: 0,
+					title: {
+						text: '光照度',
+						style: {
+							color: '#ffffff'
+						}
+					},
+					labels: {
+						format: '{value} lx',
+						style: {
+							color: '#ffffff'
+						}
+					},
+					opposite: true,
+					gridLineWidth: 0,
+					lineWidth: 1,
+					lineColor:'#ffffff'
+				}],
+				tooltip: {
+					shared: true
+				},
+				legend: {
+					backgroundColor: 'rgba(0,0,0,0)'
+				},
+				series: [{
+					name: '温度',
+					type: 'spline',
+					yAxis: 0,
+					data: [],
+					tooltip: {
+					    valueSuffix: ' °C'
+					}
+				},  {
+				    name: '湿度',
+					type: 'spline',
+					data: [],
+					yAxis: 1,
+					tooltip: {
+					    valueSuffix: ' RH'
+					}
+				},  {
+			    name: '光照度',
+				type: 'spline',
+				yAxis: 2,
+				data: [],
+				marker: {
+				    enabled: false
+				},
+				dashStyle: 'shortdot',
+				tooltip: {
+				    valueSuffix: ' lx'
+				}
+			}]
+			});
+		})
+		function SJFXClick() {
+			chart = $('#container1').highcharts();
+			chart.exportChart({
+				exportFormat : 'png'
+			});
+		}
+		$("#search").click(function () {
+		    var x = [];
+		    var y1 = [];
+		    var y2 = [];
+		    var y3 = [];
+		    
+		    var chart2 = Highcharts.chart('container2', {
+		        chart: {
+		            zoomType: 'xy',
+		            backgroundColor: 'rgba(0,0,0,0)'
+		        },
+		        colors: ["#036BC8", "#5EBEFC", "#2EF7F3"],
+		        credits: {
+		            enabled: false
+		        },
+		        exporting: {
+		            enabled: false
+		        },
+		        title: {
+		            text: '温度/湿度/光照度对比图',
+		            style: {
+		                color: '#ffffff'
+		            }
+		        },
+		        xAxis: [{
+		            //type: 'datetime',
+		            categories: [],
+		            tickInterval: 5,
+		            crosshair: true,
+		            labels: {
+		                style: {
+		                    color: '#ffffff'
+		                }
+		            },
+		            lineColor: '#ffffff'
+		        }],
+		        yAxis: [{ // Primary yAxis
+		            labels: {
+		                format: '{value}°C',
+		                style: {
+		                    color: '#ffffff'
+		                }
+		            },
+		            title: {
+		                text: '温度',
+		                style: {
+		                    color: '#ffffff'
+		                }
+		            },
+		            opposite: true,
+		            gridLineWidth: 0,
+		            lineWidth: 1,
+		            lineColor: '#ffffff'
+		        }, {
+		            // Secondary yAxis
+		            gridLineWidth: 0,
+		            title: {
+		                text: '湿度',
+		                style: {
+		                    color: '#ffffff'
+		                }
+		            },
+		            labels: {
+		                format: '{value} RH',
+		                style: {
+		                    color: '#ffffff'
+		                }
+		            },
+		            opposite: true,
+		            gridLineWidth: 0,
+		            lineWidth: 1,
+		            lineColor: '#ffffff'
+		        }, {
+		            // Tertiary yAxis
+		            gridLineWidth: 0,
+		            title: {
+		                text: '光照度',
+		                style: {
+		                    color: '#ffffff'
+		                }
+		            },
+		            labels: {
+		                format: '{value} lx',
+		                style: {
+		                    color: '#ffffff'
+		                }
+		            },
+		            gridLineWidth: 0,
+		            lineWidth: 1,
+		            lineColor: '#ffffff'
+		        }],
+		        tooltip: {
+		            shared: true
+		        },
+		        legend: {
+		            backgroundColor: 'rgba(255,255,255,0.3)'
+		        },
+		        series: [{
+		            name: '温度',
+		            type: 'spline',
+		            yAxis: 1,
+		            data: [],
+		            tooltip: {
+		                valueSuffix: ' °C'
+		            }
+		        }, {
+		            name: '湿度',
+		            type: 'spline',
+		            yAxis: 2,
+		            data: [],
+		            marker: {
+		                enabled: false
+		            },
+		            dashStyle: 'shortdot',
+		            tooltip: {
+		                valueSuffix: ' RH'
+		            }
+		        }, {
+		            name: '光照度',
+		            type: 'spline',
+
+		            data: [],
+		            tooltip: {
+		                valueSuffix: ' lx'
+		            }
+		        }]
+		    });
+			var start=$("#start").val(),
+				end=$("#end").val();
+			var time = {
+			    "histroyTime": {
+			        StartTime: start,
+			        EndTime: end,
+			        FlowerName: $.cookie('Name')
+			    }
+			};
+			$.ajax({
+			    url: '/FlowerData/GetHistoryData',
+			    type: 'post',
+			    data: { querystring: JSON.stringify(time) },
+			    dataType: "json",
+			    success: function (data) {
+			        for (var i = 0; i < data.rows.length; i++) {
+			            x.push(GetDateFormat(data.rows[i].Date));
+			            y1.push(parseFloat(data.rows[i].Temperature));
+			            y2.push(parseFloat(data.rows[i].Humidity));
+			            y3.push(parseFloat(data.rows[i].Light));
+			        };
+			        chart2.xAxis[0].setCategories(x);
+			        chart2.series[0].setData(y1);
+			        chart2.series[1].setData(y2);
+			        chart2.series[2].setData(y3);
+			    }
+			});
+
+		})
+	</script>	
+					
+</body>
+</html>

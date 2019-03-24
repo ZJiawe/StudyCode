@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FlowerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AnswerData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AnsKey" Type="nvarchar" MaxLength="500" />
+    <Property Name="AnsValue" Type="nvarchar" MaxLength="500" />
+    <Property Name="Role" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ChatData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DialogID" Type="nvarchar" MaxLength="500" />
+    <Property Name="RoleID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Role" Type="nvarchar" MaxLength="50" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChatRoleID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChatRoleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="500" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="SortID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FlowerData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Alias" Type="nvarchar" MaxLength="500" />
+    <Property Name="Introduction" Type="nvarchar" MaxLength="500" />
+    <Property Name="Techniques" Type="nvarchar" MaxLength="500" />
+    <Property Name="Picture" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="FlowerDataDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FlowerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Temperature" Type="nvarchar" MaxLength="50" />
+    <Property Name="Humidity" Type="nvarchar" MaxLength="50" />
+    <Property Name="Light" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Account" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Role" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PlantData">
+    <Key>
+      <PropertyRef Name="PlantID" />
+    </Key>
+    <Property Name="PlantID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Kind" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date" Type="date" />
+    <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ServiceData">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="FlowerModelStoreContainer">
+    <EntitySet Name="AnswerData" EntityType="Self.AnswerData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChatData" EntityType="Self.ChatData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FlowerData" EntityType="Self.FlowerData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FlowerDataDetail" EntityType="Self.FlowerDataDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlantData" EntityType="Self.PlantData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ServiceData" EntityType="Self.ServiceData" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

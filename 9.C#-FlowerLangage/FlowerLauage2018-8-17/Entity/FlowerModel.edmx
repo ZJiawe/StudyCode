@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="FlowerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AnswerData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AnsKey" Type="nvarchar" MaxLength="500" />
+          <Property Name="AnsValue" Type="nvarchar" MaxLength="500" />
+          <Property Name="Role" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ChatData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DialogID" Type="nvarchar" MaxLength="500" />
+          <Property Name="RoleID" Type="nvarchar" MaxLength="50" />
+          <Property Name="Role" Type="nvarchar" MaxLength="50" />
+          <Property Name="RoleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ChatRoleID" Type="nvarchar" MaxLength="50" />
+          <Property Name="ChatRoleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Notes" Type="nvarchar" MaxLength="500" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="SortID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FlowerData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="500" />
+          <Property Name="Introduction" Type="nvarchar" MaxLength="500" />
+          <Property Name="Techniques" Type="nvarchar" MaxLength="500" />
+          <Property Name="Picture" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="FlowerDataDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FlowerName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Temperature" Type="nvarchar" MaxLength="50" />
+          <Property Name="Humidity" Type="nvarchar" MaxLength="50" />
+          <Property Name="Light" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+          <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Account" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Role" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PlantData">
+          <Key>
+            <PropertyRef Name="PlantID" />
+          </Key>
+          <Property Name="PlantID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Kind" Type="nvarchar" MaxLength="50" />
+          <Property Name="Date" Type="date" />
+          <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ServiceData">
+          <Key>
+            <PropertyRef Name="ServiceID" />
+          </Key>
+          <Property Name="ServiceID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="FlowerModelStoreContainer">
+          <EntitySet Name="AnswerData" EntityType="Self.AnswerData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ChatData" EntityType="Self.ChatData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FlowerData" EntityType="Self.FlowerData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FlowerDataDetail" EntityType="Self.FlowerDataDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PlantData" EntityType="Self.PlantData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ServiceData" EntityType="Self.ServiceData" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FlowerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Account" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Login" EntityType="Self.Login" />
+          <EntitySet Name="FlowerData" EntityType="FlowerModel.FlowerData" />
+          <EntitySet Name="FlowerDataDetail" EntityType="FlowerModel.FlowerDataDetail" />
+          <EntitySet Name="ChatData" EntityType="FlowerModel.ChatData" />
+          <EntitySet Name="ServiceData" EntityType="FlowerModel.ServiceData" />
+          <EntitySet Name="PlantData" EntityType="FlowerModel.PlantData" />
+          <EntitySet Name="AnswerData" EntityType="FlowerModel.AnswerData" />
+        </EntityContainer>
+        <EntityType Name="FlowerData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Introduction" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Techniques" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Alias" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Picture" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="FlowerDataDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Temperature" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Humidity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Light" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FlowerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ChatData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DialogID" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="RoleID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Notes" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="SortID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ChatRoleID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ChatRoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ServiceData">
+          <Key>
+            <PropertyRef Name="ServiceID" />
+          </Key>
+          <Property Name="ServiceID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PlantData">
+          <Key>
+            <PropertyRef Name="PlantID" />
+          </Key>
+          <Property Name="PlantID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Kind" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="AnswerData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AnsKey" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="AnsValue" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FlowerModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Login">
+            <EntityTypeMapping TypeName="FlowerModel.Login">
+              <MappingFragment StoreEntitySet="Login">
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FlowerData">
+            <EntityTypeMapping TypeName="FlowerModel.FlowerData">
+              <MappingFragment StoreEntitySet="FlowerData">
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Techniques" ColumnName="Techniques" />
+                <ScalarProperty Name="Introduction" ColumnName="Introduction" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FlowerDataDetail">
+            <EntityTypeMapping TypeName="FlowerModel.FlowerDataDetail">
+              <MappingFragment StoreEntitySet="FlowerDataDetail">
+                <ScalarProperty Name="FlowerName" ColumnName="FlowerName" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Light" ColumnName="Light" />
+                <ScalarProperty Name="Humidity" ColumnName="Humidity" />
+                <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChatData">
+            <EntityTypeMapping TypeName="FlowerModel.ChatData">
+              <MappingFragment StoreEntitySet="ChatData">
+                <ScalarProperty Name="ChatRoleName" ColumnName="ChatRoleName" />
+                <ScalarProperty Name="ChatRoleID" ColumnName="ChatRoleID" />
+                <ScalarProperty Name="SortID" ColumnName="SortID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="DialogID" ColumnName="DialogID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ServiceData">
+            <EntityTypeMapping TypeName="FlowerModel.ServiceData">
+              <MappingFragment StoreEntitySet="ServiceData">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlantData">
+            <EntityTypeMapping TypeName="FlowerModel.PlantData">
+              <MappingFragment StoreEntitySet="PlantData">
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Kind" ColumnName="Kind" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="PlantID" ColumnName="PlantID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AnswerData">
+            <EntityTypeMapping TypeName="FlowerModel.AnswerData">
+              <MappingFragment StoreEntitySet="AnswerData">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="AnsValue" ColumnName="AnsValue" />
+                <ScalarProperty Name="AnsKey" ColumnName="AnsKey" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

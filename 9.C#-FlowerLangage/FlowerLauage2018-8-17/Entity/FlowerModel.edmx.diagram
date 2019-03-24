@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="52b08b4cecf144ebb20dd49bbed76a41" Name="Diagram1">
+        <EntityTypeShape EntityType="FlowerModel.Login" Width="2.25" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlowerModel.FlowerData" Width="2.5" PointX="4.75" PointY="1.5" />
+        <EntityTypeShape EntityType="FlowerModel.FlowerDataDetail" Width="4.375" PointX="4" PointY="3.625" />
+        <EntityTypeShape EntityType="FlowerModel.ChatData" Width="1.5" PointX="1" PointY="3.875" />
+        <EntityTypeShape EntityType="FlowerModel.ServiceData" Width="1.5" PointX="9.25" PointY="1.5" />
+        <EntityTypeShape EntityType="FlowerModel.PlantData" Width="1.5" PointX="9.75" PointY="4" />
+        <EntityTypeShape EntityType="FlowerModel.AnswerData" Width="1.5" PointX="0.75" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

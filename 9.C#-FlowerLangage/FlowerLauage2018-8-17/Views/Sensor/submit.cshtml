@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/css/fancy-textbox.css" rel="stylesheet" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/pingmu.css" rel="stylesheet" />
+
+    <link href="~/Content/css/lib/default.css" rel="stylesheet" />
+    <link href="~/Content/css/style1.css" rel="stylesheet" />
+    <link href="~/Content/css/purple.css" rel="stylesheet" />
+
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/jquery.fancy-textbox.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/lib/jquery.preloader.js"></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: #2ba3d4;
+            overflow: hidden;
+            background: url(../../Content/img/beijing/8.jpg) no-repeat;
+            background-size:100% 100%;
+        }
+
+        .list li {
+            list-style: none;
+            text-align: center;
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+        .clearfix {
+            display: inline-block;
+        }
+
+        html[xmlns] .clearfix {
+            display: block;
+        }
+
+        * html .clearfix {
+            height: 1%;
+        }
+
+        button {
+            background: #1AAB8A;
+            color: #fff;
+            border: none;
+            position: relative;
+            height: 40px;
+            font-size: 1.2em;
+            padding: 0 2em;
+            cursor: pointer;
+            transition: 800ms ease all;
+            outline: none;
+        }
+
+            button:hover {
+                background: #fff;
+                color: #1AAB8A;
+            }
+
+            button:before, button:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 2px;
+                width: 0;
+                background: #1AAB8A;
+                transition: 400ms ease all;
+            }
+
+            button:after {
+                right: inherit;
+                top: inherit;
+                left: 0;
+                bottom: 0;
+            }
+
+            button:hover:before, button:hover:after {
+                width: 100%;
+                transition: 800ms ease all;
+            }
+    </style>
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+
+    <div id="main-wrapper">
+
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand" style="width:100%;" align="center">
+                        <img src="~/Content/img/logo.png" width="150" alt="logo">
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse" align="center">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/FlowerData/message">数据中心</a></li>
+                        <li class="active"><a href="/Sensor/submit">传感器</a></li>
+                        <li><a href="/FlowerData/index3">查询中心</a></li>
+                        <li><a href="/Chat/talk">客服中心</a></li>
+                        <li><a href="/Home/Index">交互中心</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+        <div id="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align:center">
+                    <div class="pn1" style="width:100%;height:800px;position: relative;margin: 0 auto;background:url(/Content/img/57555d04c31b7_1024.png)no-repeat center center">
+                        <ul class="list clearfix" style="margin-left:-40px;top:120px;">
+                            <li>
+                                <input type="text" data-animation="clean-slide" id="one" data-label="wifi" data-label-color="#fff" data-mask="" />
+                            </li>
+                            <li>
+                                <input type="text" data-animation="clean-slide" id="two" data-label="秘钥" data-label-color="#fff" data-mask="" />
+                            </li>
+                            <li>
+                                <input type="text" data-animation="clean-slide" id="three" data-label="IP" data-label-color="#fff" data-mask="" value="192.168.43.115"/>
+                            </li>
+                            <li>
+                                <input type="text" data-animation="clean-slide" id="four" data-label="服务器端口" data-label-color="#fff" data-mask="" value="8080" />
+                            </li>
+                            <li>
+                                <button id="send">submit</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input').ftext();
+        });
+		$('#send').click(function(){
+			var wifi=$("#one").val()
+				keyword=$("#two").val()
+				computerid=$("#three").val()
+				port=$("#four").val();
+			var message = {
+			    "SensorData": {
+			        WiFiName: wifi,
+			        WiFiPassword: keyword,
+			        IP: computerid,
+			        Port: port,
+			    }
+			};
+			$.ajax({
+				type: "post",
+				url: "/Sensor/InSertData",
+				data: {querystring: JSON.stringify(message)},
+				dataType: "json",
+				success: function (data) {
+				    alert("登陆成功");
+				    window.location.href = "../../FlowerData/message";
+
+				}
+			});
+		});
+    </script>
+
+</body>
+</html>

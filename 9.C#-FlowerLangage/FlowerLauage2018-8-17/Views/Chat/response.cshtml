@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>客服回复</title>
+    <link href="~/Content/css/qq2.css" rel="stylesheet" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-image: url('../../Content/img/16.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+    </style>
+    <link href="~/Content/css/pingmu.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- <div style="position:absolute;top:50%;left:50%;margin:-300px 0 0 -300px;width:600px;height:600px;background-color:#e33456"> -->
+    <!-- </div> -->
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="padding:7px 15px;">
+                    <img alt="Brand" src="~/Content/img/logo23.png" style="width:80px;height:40px;transform: scale(1.5);" />
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="example">
+                <ul class="nav navbar-nav ">
+                    <li class="active"><a href="#">客服界面</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="height:500px;">
+                <div class="qqBox">
+                    <div class="context">
+                        <div class="conLeft">
+                            <ul class="tv_text">
+                            </ul>
+                        </div>
+                        <div class="conRight">
+                            <div class="Righthead">
+                                <div class="headName"></div>
+                            </div>
+                            <!-- 对话框区域 -->
+                            <div class="RightCont">
+                                <ul class="newsList"></ul>
+                            </div>
+                            <!-- 输入部分 -->
+                            <div class="RightFoot">
+                                <div class="inputBox">
+                                    <textarea class="dope" style="width: 100%;height: 75px; border: none;outline: none;resize:none;background-color: #ebebec;" name="" rows="" cols=""></textarea>
+                                    <button class="sendBtn">发送(s)</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="~/Content/js/jquery.min.js"></script>
+<script src="~/Content/js/customerchat1.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="~/Content/js/jquery.cookie.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
+
+

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="~/Content/css/base.css" rel="stylesheet" />
+    <link href="~/Content/css/iconfont.css" rel="stylesheet" />
+    <link href="~/Content/css/reg2.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="ajax-hook"></div>
+    <div class="wrap">
+        <div class="wpn">
+            <div class="form-data pos">
+				<p class="p-input pos">
+					<label for="idname">用户名</label>
+					<input type="text" id="idname" autocomplete="off">
+					<span class="tel-warn tel-err hide"><em></em><i class="icon-warn"></i></span>
+				</p>
+				<p class="p-input pos " id="pwd">
+					<label for="passport">输入密码</label>
+					<input type="password" style="display: none"/>
+					<input type="password" id="passport">
+					<span class="tel-warn pwd-err hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
+				</p>
+				<p class="p-input pos " id="confirmpwd">
+					<label for="passport2">确认密码</label>
+					<input type="password" style="position:absolute;top:-998px;display: none"/>
+					<input type="password" id="passport2">
+					<span class="tel-warn confirmpwd-err hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
+				</p>
+                <div class="reg_checkboxline pos">
+                    <span class="z"><i class="icon-ok-sign boxcol" nullmsg="请同意!"></i></span>
+                    <p>我已阅读并接受 <a href="#" target="_brack">《XXXX协议说明》</a></p>
+                </div>
+                <button class="lang-btn">注册</button>
+                <div class="bottom-info">已有账号，<a href="/login/index">马上登录</a></div>
+                <p class="right">Powered by © 2018</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/agree.js"></script>
+    <script src="~/Content/js/jquery.md5.js"></script>
+    <script>
+		$(".lang-btn").click(function(){
+			if($("#idname").val()!=null||$("#idname").val()!=''){
+				if($("#passport").val()!=$("#passport2").val()){
+					$('.confirmpwd-err').removeClass('hide').find("em").text('两次密码不一致请重新输入');
+					return false;
+				}else {
+					$('.confirmpwd-err').addClass('hide');
+				}
+				var idname = $.trim($('#idname').val());
+				var passport = $.trim($('#passport').val());
+				var ldata = {
+				    "LoginData": {
+				        Account: idname,
+				        Password: passport,
+				        UserName: idname
+				    }
+				};
+				var ldata = JSON.stringify(ldata);
+				console.log(ldata);
+				$.ajax({
+				    url: '/Login/CreatAccount',
+					type: 'post',
+					dataType: 'json',
+					data: { querystring: ldata },
+					success:function(data){
+					    if (data.msg == '账号未注册') {
+					        window.location.href = "../../Login/index";
+					    }
+					    else {
+					        $('.tel-err').removeClass('hide').find("em").text(data.msg);
+					        return false;
+					    }
+					},
+					error:function(){
+					}
+				});
+			}
+		});
+
+	</script>
+</body>
+</html>

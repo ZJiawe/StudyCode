@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FlowerModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="FlowerModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlowerData">
+      <EntityTypeMapping TypeName="FlowerModel.FlowerData">
+        <MappingFragment StoreEntitySet="FlowerData">
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="Techniques" ColumnName="Techniques" />
+          <ScalarProperty Name="Introduction" ColumnName="Introduction" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlowerDataDetail">
+      <EntityTypeMapping TypeName="FlowerModel.FlowerDataDetail">
+        <MappingFragment StoreEntitySet="FlowerDataDetail">
+          <ScalarProperty Name="FlowerName" ColumnName="FlowerName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Light" ColumnName="Light" />
+          <ScalarProperty Name="Humidity" ColumnName="Humidity" />
+          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChatData">
+      <EntityTypeMapping TypeName="FlowerModel.ChatData">
+        <MappingFragment StoreEntitySet="ChatData">
+          <ScalarProperty Name="ChatRoleName" ColumnName="ChatRoleName" />
+          <ScalarProperty Name="ChatRoleID" ColumnName="ChatRoleID" />
+          <ScalarProperty Name="SortID" ColumnName="SortID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="DialogID" ColumnName="DialogID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceData">
+      <EntityTypeMapping TypeName="FlowerModel.ServiceData">
+        <MappingFragment StoreEntitySet="ServiceData">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlantData">
+      <EntityTypeMapping TypeName="FlowerModel.PlantData">
+        <MappingFragment StoreEntitySet="PlantData">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Kind" ColumnName="Kind" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PlantID" ColumnName="PlantID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnswerData">
+      <EntityTypeMapping TypeName="FlowerModel.AnswerData">
+        <MappingFragment StoreEntitySet="AnswerData">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="AnsValue" ColumnName="AnsValue" />
+          <ScalarProperty Name="AnsKey" ColumnName="AnsKey" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

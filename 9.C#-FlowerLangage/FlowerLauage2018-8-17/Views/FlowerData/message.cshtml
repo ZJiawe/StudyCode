@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/ui.jqgrid.css" rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="~/Content/js/jquery.jqGrid.min.js"></script>
+    <link href="~/Content/css/ui.jqgrid-bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/pingmu.css" rel="stylesheet" />
+    <link href="~/Content/css/lib/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/css/lib/nivo-lightbox.css" rel="stylesheet" />
+    <link href="~/Content/css/lib/default.css" rel="stylesheet" />
+
+    <!--Template Styles-->
+    <link href="~/Content/css/style1.css" rel="stylesheet" />
+    <link href="~/Content/css/purple.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body {
+            background: url(../../Content/img/beijing/2.jpg) no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #CCCCCC;
+            overflow:scroll; overflow-x:hidden;
+        }
+        .input_wrap {
+            width: 60%;
+            max-width: 100%;
+            position: relative;
+        }
+        .input_wrap span {
+            display: none;
+            font-size: 20px;
+            color: #fff;
+            position: absolute;
+            bottom: 50%;
+            -webkit-transition: margin .8s;
+            transition: margin .8s;
+            opacity: .8;
+            margin: 0;
+            left: 50%;
+            font-weight: 100;
+        }
+
+        .input_wrap span.in {
+            margin-bottom: 20px;
+        }
+
+        input {
+            -webkit-appearance: none;
+            border-radius: 0;
+            border: none;
+            outline: none;
+            padding: 10px 10px;
+            height: 60px;
+            width: 100%;
+            background:url(../../Content/img/1.png);
+            /*background: rgba(0, 159, 255, 0.7);*/
+            font-size: 1.4em;
+            color: #fff;
+            -webkit-transition: .3s;
+            transition: .3s;
+            text-align: center;
+            letter-spacing: 3px;
+            margin-top: 20px;
+            border-radius: 50px;
+        }
+
+        input:focus {
+            background: rgba(0, 112, 255, 0.7);
+            box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        }
+
+        .button {
+            background: #1AAB8A;
+            color: #fff;
+            border: none;
+            position: relative;
+            height: 40px;
+            font-size: 1.2em;
+            padding: 0 2em;
+            cursor: pointer;
+            transition: 800ms ease all;
+            outline: none;
+            margin-top: 10px;
+        }
+
+            .button:hover {
+                background: #fff;
+                color: #1AAB8A;
+            }
+
+        .button:before, button:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 2px;
+            width: 0;
+            background: #1AAB8A;
+            transition: 400ms ease all;
+        }
+
+        .button:after {
+            right: inherit;
+            top: inherit;
+            left: 0;
+            bottom: 0;
+        }
+
+        .button:hover:before, button:hover:after {
+            width: 100%;
+            transition: 800ms ease all;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+
+    <div id="main-wrapper">
+
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand" style="width:100%;" align="center">
+                        <img src="~/Content/img/logo.png" width="150" alt="logo">
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse" align="center">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a>数据中心</a></li>
+                        <li><a href="/Sensor/submit">传感器</a></li>
+                        <li><a href="/FlowerData/index3">查询中心</a></li>
+                        <li><a href="/Chat/talk">咨询中心</a></li>
+                        <li><a href="/Home/Index">交互中心</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+        <div id="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div style="text-align:center">
+                        <img src="~/Content/img/01.png" width="150" height="auto" />
+                        <div class="text-center">
+                            <input type="text" placeholder="名字" id="flower_name" />
+                            <input type="text" placeholder="种类" id="flower_variety" />
+                            <input type="text" placeholder="花盆编码" id="flower_number" />
+                            <button id="send" class="button">提交</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12" style="margin-top:20px;">
+                    <div style="border-radius: 20px;">
+                        <div class="container-fluid">
+                            <div class="row" id="row">
+                                <div class="col-md-8 col-md-offset-2" style="background:#eee" id="div_1">
+                                    <table id="grid" style="background:#eff"></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="~/Content/js/lib/jquery.preloader.js"></script>
+    <script src="~/Content/js/lib/nivo-lightbox.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+
+    <script src="~/Content/js/lib/smoothscroll.js"></script>
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/lib/jquery.superslides.min.js"></script>
+    <script src="~/Content/js/lib/jquery.mixitup.min.js"></script>
+    <script src="~/Content/js/lib/jquery.bxslider.min.js"></script>
+    <script src="~/Content/js/lib/jquery.backtotop.js"></script>
+    <script src="~/Content/js/lib/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script src="~/Content/js/lib/retina.min.js"></script>
+    <script src="~/Content/js/jquery.jqGrid.min.js"></script>
+    <script src="~/Content/js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+		(function($) {
+		  function getRandomInt(min, max) {
+		    return Math.floor(Math.random() * (max - min + 1)) + min;
+		  }
+		  $.fn.animChars = function(options) {
+		    var params = $.extend(
+		      {
+		        duration: 1,
+		        upperLimit: 150,
+		        sizeInterval: [15, 80]
+		      },
+		      options
+		    );
+		    $(this).keypress(function(e) {
+		      console.log(this.selectionStart)
+		      var rand = getRandomInt(1, 9);
+		      var randP = Math.floor(Math.random() * 10);
+		      randP < 5 ? (randP = rand) : (randP = rand - rand * 2);
+
+		      var c = String.fromCharCode(e.which);
+		      $(this).parent().append("<span class='cl" + rand + "'>" + c + "</span>");
+
+		      $(this)
+		        .parent()
+		        .find("span.cl" + rand + "")
+		        .css({
+		          left: getRandomInt(0, 90) + "%",
+		          "font-size": getRandomInt(
+		            params.sizeInterval[0],
+		            params.sizeInterval[1]
+		          )
+		        })
+		        .fadeIn(100, function() {
+		          $(this)
+		            .css({
+		              "margin-bottom": getRandomInt(
+		                params.upperLimit - params.upperLimit / 2
+		                  ? params.upperLimit / 2
+		                  : 0,
+		                params.upperLimit
+		              ),
+		              "margin-left": randP * 10
+		            })
+		            .fadeOut(params.duration * 1000, function() {
+		              $(this).remove();
+		            });
+		        });
+		    });
+		  };
+		})(jQuery);
+
+		$(document).ready(function() {
+		  $("input").animChars({
+		    duration: 0.8,
+		    upperLimit: 200,
+		    sizeInterval: [15, 80]
+		  });
+		});
+    </script>
+    <script>
+        $(function () {
+            getmsessage();
+            $(window).resize(function () {
+                $("#grid").setGridWidth($("#div_1").width());
+
+            });
+        })
+        $("#send").click(function () {
+            var ldata = {
+                "plantData": {
+                    Name: $("#flower_name").val(),//花名字
+                    Kind: $("#flower_variety").val(),
+                    //flower_number: $("#flower_number").val(),
+                    //ID: $.cookie('ID'),                  //用户ID号
+                    //Account: $.cookie('Account'),        //用户账号
+                    //UserName: $.cookie('UserName'),      //用户名称
+                }
+            };
+            var ldata = JSON.stringify(ldata);
+            $.ajax({
+                type: "post",
+                url: "/Plant/SaveData",
+                data: { querystring: ldata },
+                dataType: "json",
+                success: function (data) {
+                    getmsessage();
+                }
+            });
+        })
+        var jqgrid1;
+        function getmsessage() {
+            $("#grid").jqGrid({
+                url: "/Plant/GetList",
+                datatype : "json",
+                colNames: ['种类','名字'],
+                colModel: [
+                    { name: 'Kind', index: 'Kind', width: '50%', editable: false, align: 'center' },
+                    { name: 'Name', index: 'Name', width: '50%', editable: true, align: 'center' }
+                ],
+                viewrecords: true,
+                shrinkToFit: true,
+                autowidth: true,//自动宽
+                rowNum : 15,
+                rowList: [15, 30, 45],//分页选项，下拉选择每页显示的记录数
+                sortable: true,
+                rownumbers: true,
+                ondblClickRow: function () {
+                    console.log(this);
+                    var colnum = $('#' + this.id).getGridParam('selrow')
+                    $.cookie('Kind', $("#grid").getCell(colnum, 'Kind'), { expires: 7, path: '/' });
+                    $.cookie('Name', $("#grid").getCell(colnum, 'Name'), { expires: 7, path: '/' });
+                    window.location.href = "../../FlowerData/index";
+                },
+                gridComplete: function () {
+                }
+            });
+            //$(function () {
+            //    $(window).resize(function () {
+            //        $("#grid").setGridWidth($("#row").width());
+            //        console.log($("#row").width());
+            //    });
+            //});
+        }
+
+
+    </script>
+</body>
+</html>

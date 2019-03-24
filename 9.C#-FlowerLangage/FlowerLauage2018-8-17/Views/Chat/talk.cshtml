@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="~/Content/css/qq2.css" rel="stylesheet" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	body,html{
+        width:100%;
+		height:100%;
+        background-image: url('../../Content/img/16.jpg'); 
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        overflow-x: hidden; 
+	}
+    .time {
+        text-align:center;
+    }
+	</style>
+    <link href="~/Content/css/pingmu.css" rel="stylesheet" />
+    <link href="~/Content/css/lib/default.css" rel="stylesheet" />
+    <link href="~/Content/css/style1.css" rel="stylesheet" />
+    <link href="~/Content/css/purple.css" rel="stylesheet" />
+
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/jquery.fancy-textbox.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/lib/jquery.preloader.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+	
+    <div id="main-wrapper" style="height:100%">
+
+        <!-- Site Navigation -->
+        <div id="menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand" style="width:100%;" align="center">
+                        <img src="~/Content/img/logo.png" width="150" alt="logo">
+                    </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse" align="center">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/FlowerData/message">数据中心</a></li>
+                        <li><a href="/Sensor/submit">传感器</a></li>
+                        <li><a href="/FlowerData/index3">查询中心</a></li>
+                        <li class="active"><a href="#">咨询中心</a></li>
+                        <li><a href="/Home/Index">交互中心</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+        <div id="container" style="top: 50%;transform: translateY(-50%);">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-12" style="height:600px;">
+                        <div class="qqBox">
+                            <div class="context">
+                                <div class="conLeft">
+                                    <ul>
+                                        <li>
+                                            <div class="liLeft"><img src="~/Content/img/19.jpg" /></div>
+                                            <div class="liRight">
+                                                <span class="intername">客服1</span>
+                                                <span class="infor" id="info"></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="liLeft"><img src="~/Content/img/20170926103645_25.jpg" /></div>
+                                            <div class="liRight">
+                                                <span class="intername">客服2</span>
+                                                <span class="infor" id="info2"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                @*客服1*@
+                                <div class="conRight" id="one">
+                                    <div class="Righthead">
+                                        <div class="headName"></div>
+                                    </div>
+                                    <!-- 对话框区域 -->
+                                    <div class="RightCont" id="RightCont1">
+                                        <ul class="newsList"></ul>
+                                    </div>
+                                    <!-- 输入部分 -->
+                                    <div class="RightFoot">
+                                        <div class="inputBox">
+                                            <textarea id="dope" style="width: 100%;height: 75px; border: none;outline: none;resize:none;background-color: #ebebec;" name="" rows="" cols=""></textarea>
+                                            <button class="sendBtn">发送(s)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                @*客服2*@
+                                <div class="conRight" id="two">
+                                    <div class="Righthead">
+                                        <div class="headName"></div>
+                                    </div>
+                                    <div class="RightCont" id="RightCont2">
+                                        <ul class="newsList2"></ul>
+                                    </div>
+                                    <div class="RightFoot">
+                                        <div class="inputBox">
+                                            <textarea id="dope2" style="width: 100%;height: 75px; border: none;outline: none;resize:none;background-color: #ebebec;" name="" rows="" cols=""></textarea>
+                                            <button class="sendBtn">发送(s)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/chat3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/jquery.cookie.js"></script>
+</body>
+</html>
+				
