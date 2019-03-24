@@ -31,17 +31,12 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
-    <!-- 引入freeMarker的依赖包. -->
+    <!-- 引入freeMarker -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-freemarker</artifactId>
     </dependency>
 
-    <!-- SpringJDBC 依赖包-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-jdbc</artifactId>
-    </dependency>
     <!-- 数据库驱动 -->
     <dependency>
       <groupId>mysql</groupId>
@@ -53,8 +48,20 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- SpringJDBC-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
 
-    <!-- 测试单元包-->
+    <!-- mybaties -->
+    <dependency>
+      <groupId>org.mybatis.spring.boot</groupId>
+      <artifactId>mybatis-spring-boot-starter</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+
+    <!-- 测试单元-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -64,6 +71,16 @@
   </dependencies>
 
   <build>
+    <!-- 编译xml文件-->
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+        </includes>
+      </resource>
+    </resources>
+
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->

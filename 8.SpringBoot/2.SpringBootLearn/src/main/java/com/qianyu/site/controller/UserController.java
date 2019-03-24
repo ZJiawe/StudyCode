@@ -1,5 +1,6 @@
 package com.qianyu.site.controller;
 
+import com.qianyu.site.mapper.IUserMapper;
 import com.qianyu.site.model.User;
 import com.qianyu.site.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,6 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
 
     @RequestMapping("{id}")
     @ResponseBody()
@@ -28,5 +28,19 @@ public class UserController {
     public String registerUser(String username, String password){
         userService.register(username,password);
         return "Succeess!";
+    }
+
+    @RequestMapping("save")
+    @ResponseBody
+    public String saveUser(String username, String password){
+        userService.save(username,password);
+        return "Succeess!";
+    }
+
+    @RequestMapping("get")
+    @ResponseBody
+    public User getById(String username ){
+        User user =  userService.getById(username);
+        return user;
     }
 }
