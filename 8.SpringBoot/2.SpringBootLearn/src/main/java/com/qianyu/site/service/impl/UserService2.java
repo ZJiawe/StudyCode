@@ -8,11 +8,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.security.SignedObject;
-
 @Service
 @Transactional
-public class UserService implements IUserService {
+public class UserService2 implements IUserService {
     @Autowired
     private JdbcTemplate jdbcTemplate;
     @Autowired
@@ -33,7 +31,7 @@ public class UserService implements IUserService {
 
     public User getById(String name) {
         User user = iUserMapper.findByUsername(name);
-        System.out.println("Service1");
+        System.out.println("Service2");
         return user;
     }
 }

@@ -15,9 +15,8 @@ public interface IUserMapper {
 //    public User getById(@Param("id") Integer id);
 
 //  使用xml文件
-    public int save(String username, String password);
+public void save(String username,String password);
 
-
-    public User findByUsername(String username);
+public User findByUsername(String username);
 
 }

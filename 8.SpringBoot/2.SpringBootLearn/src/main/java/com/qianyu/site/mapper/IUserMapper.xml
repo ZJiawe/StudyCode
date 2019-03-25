@@ -9,5 +9,4 @@
     <select id="findByUsername" resultType="com.qianyu.site.model.User" parameterType="string">
         select * from t_user where username = #{username,jdbcType=VARCHAR}
     </select>
-
 </mapper>
