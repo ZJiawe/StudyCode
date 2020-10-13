@@ -21,7 +21,7 @@
 
     <!--SSM包版本控制-->
     <properties>
-        <juntit.version>4.11</juntit.version>
+        <juntit.version>4.13.1</juntit.version>
         <spring.version>4.3.14.RELEASE</spring.version>
         <mybatis.version>3.4.1</mybatis.version>
         <mybatis-spring.version>1.3.1</mybatis-spring.version>
